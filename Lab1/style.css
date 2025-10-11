@@ -1,0 +1,93 @@
+
+:root{
+    --bg: #0b0b0f;
+    --panel: #17171a;
+    --display: #1c1c1f;
+    --number: #333333;
+    --function: #a5a5a5;
+    --accent: #ff9f0a; 
+    --text-light: #ffffff;
+}
+
+*{box-sizing:border-box}
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background: linear-gradient(180deg, #0f0f12 0%, #080809 100%);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+
+.page{width:100%; max-width:420px; padding:20px}
+
+.calculator{
+    background: linear-gradient(180deg, var(--panel), #0f0f11);
+    border-radius: 28px;
+    padding: 18px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.6), inset 0 1px 0 rgba(255,255,255,0.02);
+}
+
+.screen{
+    padding: 10px 14px 18px 14px;
+}
+
+.screen-label{
+    color: rgba(255,255,255,0.45);
+    font-size: 12px;
+    text-align: right;
+    margin-bottom: 6px;
+}
+
+.display{
+    width:100%;
+    background: linear-gradient(180deg, var(--display), #101012);
+    color: var(--text-light);
+    border: none;
+    padding: 18px 14px;
+    font-size: 36px;
+    border-radius: 12px;
+    text-align: right;
+    outline: none;
+    box-shadow: inset 0 -2px 0 rgba(0,0,0,0.4);
+}
+
+.buttons{
+    margin-top: 16px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 68px;
+    gap: 12px;
+}
+
+.btn{
+    border: none;
+    border-radius: 50%;
+    background: linear-gradient(180deg,#505050,#2f2f2f);
+    color: var(--text-light);
+    font-size: 22px;
+    cursor: pointer;
+    box-shadow: 0 6px 0 rgba(0,0,0,0.6), inset 0 1px 0 rgba(255,255,255,0.02);
+    transition: transform 0.06s ease, box-shadow 0.06s ease;
+}
+
+.btn:active{transform: translateY(2px); box-shadow: 0 4px 0 rgba(0,0,0,0.6)}
+
+.btn-clear{background: linear-gradient(180deg,#d3d3d3,#a8a8a8); color:#000}
+.btn-dot{background: linear-gradient(180deg,#d3d3d3,#a8a8a8); color:#000}
+
+.btn-operator{background: linear-gradient(180deg,#ffb86b,#ff9f0a); color:#000; font-weight:600}
+.btn-equal{background: linear-gradient(180deg,#ffb86b,#ff9f0a); color:#000; grid-row:3 / span 2}
+
+.btn-zero{grid-column: 1 / span 2; border-radius: 34px; text-align:left; padding-left:26px}
+
+
+@media (max-width:420px){
+    .buttons{grid-auto-rows: 62px; gap:10px}
+    .btn{font-size:20px}
+    .display{font-size:32px}
+}
+
+/* Accessibility focus */
+.btn:focus{outline: 3px solid rgba(255,159,10,0.25); outline-offset:2px}
