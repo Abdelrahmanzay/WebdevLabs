@@ -1,55 +1,154 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
-   
+  <head>
     <title>Calculator</title>
-    <link rel="stylesheet" href="style.css">
-   
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body>
     <main class="wrap">
-        <div class="calculator" role="application" aria-label="Calculator">
-            <div class="header">iOS Calculator</div>
-            <div class="screen">
-                <input id="Answer" class="display" type="text" readonly aria-live="polite" value="">
-            </div>
-
-            <div class="pad">
-                <div class="pad-left">
-                    <button class="btn btn-clear" value="C" onclick="EnterClear()">AC</button>
-                    <button class="btn" value="00" onclick="EnterNumber(this.value)">00</button>
-                    <button class="btn" value="%" onclick="EnterOperator(this.value)">%</button>
-
-                    <button class="btn number" value="7" onclick="EnterNumber(this.value)">7</button>
-                    <button class="btn number" value="8" onclick="EnterNumber(this.value)">8</button>
-                    <button class="btn number" value="9" onclick="EnterNumber(this.value)">9</button>
-
-                    <button class="btn number" value="4" onclick="EnterNumber(this.value)">4</button>
-                    <button class="btn number" value="5" onclick="EnterNumber(this.value)">5</button>
-                    <button class="btn number" value="6" onclick="EnterNumber(this.value)">6</button>
-
-                    <button class="btn number" value="1" onclick="EnterNumber(this.value)">1</button>
-                    <button class="btn number" value="2" onclick="EnterNumber(this.value)">2</button>
-                    <button class="btn number" value="3" onclick="EnterNumber(this.value)">3</button>
-
-                    <button class="btn btn-zero" value="0" onclick="EnterNumber(this.value)">0</button>
-                    <button class="btn btn-dot" value="." onclick="EnterNumber(this.value)">.</button>
-                </div>
-
-                <div class="pad-right">
-                    <button class="btn op" value="+" onclick="EnterOperator(this.value)">+</button>
-                    <button class="btn op" value="-" onclick="EnterOperator(this.value)">−</button>
-                    <button class="btn op" value="*" onclick="EnterOperator(this.value)">×</button>
-                    <button class="btn op" value="/" onclick="EnterOperator(this.value)">÷</button>
-                    <button class="btn eq" value="=" onclick="EnterEqual()">=</button>
-                </div>
-            </div>
+      <div class="calculator" role="application" aria-label="Calculator">
+        <div class="header">iOS Calculator</div>
+        <div class="screen">
+          <input
+            id="Answer"
+            class="display"
+            type="text"
+            readonly
+            aria-live="polite"
+            value=""
+          />
         </div>
+
+        <div class="pad">
+          <div class="pad-left">
+            <button class="btn btn-clear" value="C" onclick="EnterClear()">
+              AC
+            </button>
+            <button class="btn" value="00" onclick="EnterNumber(this.value)">
+              00
+            </button>
+            <button class="btn" value="%" onclick="EnterOperator(this.value)">
+              %
+            </button>
+
+            <button
+              class="btn number"
+              value="7"
+              onclick="EnterNumber(this.value)"
+            >
+              7
+            </button>
+            <button
+              class="btn number"
+              value="8"
+              onclick="EnterNumber(this.value)"
+            >
+              8
+            </button>
+            <button
+              class="btn number"
+              value="9"
+              onclick="EnterNumber(this.value)"
+            >
+              9
+            </button>
+
+            <button
+              class="btn number"
+              value="4"
+              onclick="EnterNumber(this.value)"
+            >
+              4
+            </button>
+            <button
+              class="btn number"
+              value="5"
+              onclick="EnterNumber(this.value)"
+            >
+              5
+            </button>
+            <button
+              class="btn number"
+              value="6"
+              onclick="EnterNumber(this.value)"
+            >
+              6
+            </button>
+
+            <button
+              class="btn number"
+              value="1"
+              onclick="EnterNumber(this.value)"
+            >
+              1
+            </button>
+            <button
+              class="btn number"
+              value="2"
+              onclick="EnterNumber(this.value)"
+            >
+              2
+            </button>
+            <button
+              class="btn number"
+              value="3"
+              onclick="EnterNumber(this.value)"
+            >
+              3
+            </button>
+
+            <button
+              class="btn btn-zero"
+              value="0"
+              onclick="EnterNumber(this.value)"
+            >
+              0
+            </button>
+            <button
+              class="btn btn-dot"
+              value="."
+              onclick="EnterNumber(this.value)"
+            >
+              .
+            </button>
+          </div>
+
+          <div class="pad-right">
+            <button
+              class="btn op"
+              value="+"
+              onclick="EnterOperator(this.value)"
+            >
+              +
+            </button>
+            <button
+              class="btn op"
+              value="-"
+              onclick="EnterOperator(this.value)"
+            >
+              −
+            </button>
+            <button
+              class="btn op"
+              value="*"
+              onclick="EnterOperator(this.value)"
+            >
+              ×
+            </button>
+            <button
+              class="btn op"
+              value="/"
+              onclick="EnterOperator(this.value)"
+            >
+              ÷
+            </button>
+            <button class="btn eq" value="=" onclick="EnterEqual()">=</button>
+          </div>
+        </div>
+      </div>
     </main>
 
     <script src="calcscript.js"></script>
-</body>
-
+  </body>
 </html>
