@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Todo App</h1>
+      <div>
+        <input placeholder="What task would u like" class="inputElement" />
+        <button class="addButton" type="button">Add</button>
+      </div>
+      <div>
+        <button class="filter active" data-filter="all" type="button">
+          All
+        </button>
+        <button class="filter" data-filter="active" type="button">
+          Active
+        </button>
+        <button class="filter" data-filter="completed" type="button">
+          Complete
+        </button>
+      </div>
+      <ul class="todolist" aria-live="polite"></ul>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

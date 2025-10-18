@@ -1,0 +1,24 @@
+body {
+  background-color: rgb(191, 181, 253);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; 
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+.container {
+  max-width: 800px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+
+.todolist { list-style: none; padding-left: 0; }
+.todolist li { padding: 8px 0; border-bottom: 1px solid #eee; display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.addButton { cursor: pointer; }
+.todo-left { display: flex; align-items: center; gap: 8px; }
+.todo-text.completed { text-decoration: line-through; color: #777; }
