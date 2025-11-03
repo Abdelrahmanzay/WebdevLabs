@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="calculator">
+    <div class="header">iOS Calculator</div>
+    <input id="Answer" class="display" type="text" readonly>
+
+    <div class="pad">
+      <div class="left">
+        <button onclick="EnterClear()">AC</button>
+        <button onclick="EnterNumber('00')">00</button>
+        <button onclick="EnterOperator('%')">%</button>
+
+        <button onclick="EnterNumber('7')">7</button>
+        <button onclick="EnterNumber('8')">8</button>
+        <button onclick="EnterNumber('9')">9</button>
+
+        <button onclick="EnterNumber('4')">4</button>
+        <button onclick="EnterNumber('5')">5</button>
+        <button onclick="EnterNumber('6')">6</button>
+
+        <button onclick="EnterNumber('1')">1</button>
+        <button onclick="EnterNumber('2')">2</button>
+        <button onclick="EnterNumber('3')">3</button>
+
+        <button class="zero" onclick="EnterNumber('0')">0</button>
+        <button onclick="EnterNumber('.')">.</button>
+      </div>
+
+      <div class="right">
+        <button onclick="EnterOperator('+')">+</button>
+        <button onclick="EnterOperator('-')">−</button>
+        <button onclick="EnterOperator('*')">×</button>
+        <button onclick="EnterOperator('/')">÷</button>
+        <button onclick="EnterEqual()">=</button>
+      </div>
+    </div>
+  </div>
+  <script src="calcscript.js"></script>
+</body>
+</html>

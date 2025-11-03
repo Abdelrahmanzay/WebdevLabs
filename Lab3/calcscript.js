@@ -21,11 +21,7 @@ function EnterOperator(op) {
     answerBox.value = firstNumber;
     return;
   }
-  if (secondNumber === "" && op === "-") {
-    secondNumber = "-";
-    answerBox.value = secondNumber;
-    return;
-  }
+ 
 
   if (firstNumber === "") return;
 
