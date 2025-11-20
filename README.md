@@ -17,13 +17,15 @@ Notes about `Lab5`
 
 ---
 
-## Lab6 – Simplified React Vite Project
+## Lab6 – Udemy Landing Page Clone (React + Vite)
 
-Lab6 is a pared-down React project using Vite. It was simplified to make the code easier to read and understand.
+Lab6 aims to build a simple clone of the Udemy landing experience
 
-### Purpose
+### Goals
 
-Provide a minimal example of a React landing page with very little styling and only one main component instead of many small ones.
+- Practice component composition (header, hero, skills, AI era, courses, trusted companies, footer).
+- Use static arrays for mock data (courses, categories, companies) without external APIs.
+- Apply structured CSS for layout while remaining readable.
 
 ### Current Structure
 
@@ -33,15 +35,27 @@ Lab6/
 	package.json
 	vite.config.js
 	src/
-		main.jsx        # mounts the app
-		UdemyLandingPage.jsx  # single simplified component (header, hero, courses, footer)
-		index.css       # minimal styles
+		main.jsx                # mounts <UdemyLandingPage />
+		UdemyLandingPage.jsx    # orchestrates sections
+		index.css               # global styles & layout
+		components/
+			Header.jsx
+			HeroSection.jsx
+			SkillsSection.jsx
+			AIEraSection.jsx
+			CourseList.jsx
+			TrustedCompanies.jsx
 ```
 
-### Dependencies
+### Key Components
 
-- React / ReactDOM (version per `package.json`)
-- Vite for dev server and build
+- `Header.jsx`: top navigation, search, auth buttons.
+- `HeroSection.jsx`: primary marketing message & CTA.
+- `SkillsSection.jsx`: highlights skill categories.
+- `AIEraSection.jsx`: AI era pitch + benefits list.
+- `CourseList.jsx`: sample course grid using mock data.
+- `TrustedCompanies.jsx`: company logo placeholders.
+- `UdemyLandingPage.jsx`: assembles all sections + basic footer.
 
 ### How to Run
 
@@ -51,7 +65,7 @@ npm install
 npm run dev
 ```
 
-Then open the shown local URL (usually http://localhost:5173/).
+Open the printed local URL (e.g. http://localhost:5173/).
 
 
 
