@@ -58,7 +58,7 @@ export default function CourseList() {
         <div className="course-cards">
           {courses.map(course => (
             <div key={course.id} className="course-card">
-              <div className="course-thumb">[Course Thumbnail]</div>
+              <div className="course-thumb">[Course image]</div>
               <div className="course-meta">
                 <h3 className="course-title">{course.title}</h3>
                 <div className="course-instructor">{course.instructor}</div>

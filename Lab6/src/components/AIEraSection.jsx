@@ -22,7 +22,7 @@ export default function AIEraSection() {
           <button className="btn secondary">Learn more</button>
           <p className="pricing-info">Starting at £E204.00/month</p>
         </div>
-        <div className="ai-era-visual">[Visual collage placeholder]</div>
+        <div className="ai-era-visual">[IMAGE]</div>
       </div>
     </section>
   );

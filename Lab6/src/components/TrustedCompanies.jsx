@@ -19,7 +19,7 @@ export default function TrustedCompanies() {
         <div className="company-logos">
           {companies.map((name, idx) => (
             <div key={idx} className="company-logo" aria-label={name}>
-              {/* In a real app this would be an <img> with src */}
+              {}
               <span className="logo-placeholder">{name}</span>
             </div>
           ))}
