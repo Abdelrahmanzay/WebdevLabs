@@ -1,0 +1,45 @@
+# Node modules
+node_modules/
+
+# Environment & secrets
+.env
+.env.local
+
+# Logs & debug output
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+
+# Build / output (if later added)
+dist/
+build/
+coverage/
+
+# Cache & temp
+.vite/
+.parcel-cache/
+.eslintcache
+.turbo/
+*.tsbuildinfo
+
+# OS / Editor junk
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.orig
+
+# IDE settings
+.idea/
+.vscode/
+
+# Optional lockfiles (keep the one you use)
+
+yarn.lock
+pnpm-lock.yaml
+
+# Misc
+*.bak
+*.tmp

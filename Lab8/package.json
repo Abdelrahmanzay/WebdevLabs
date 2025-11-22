@@ -1,0 +1,14 @@
+{
+  "name": "lab8",
+  "version": "1.0.0",
+  "main": "App.js",
+  "scripts": {
+    "dev": "nodemon App.js",
+    "start": "node App.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "nodemon": "^3.1.11",
+    "dotenv": "^16.4.5"
+  }
+}
